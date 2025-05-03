@@ -1,4 +1,4 @@
-```
+
 # ICS344 Course Project
 
 ## Phase 1: Setup and Compromise the Service
@@ -73,4 +73,4 @@ We ran the custom script named `SSH-cus-script.py`, which is uploaded to our rep
 As shown in the screenshot below, the successful attempt used the password: `vagrant`.
 
 ![Custom Script Success](images/custom_script_success.jpg)
-```
+
