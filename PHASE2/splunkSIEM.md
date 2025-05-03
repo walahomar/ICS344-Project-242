@@ -52,6 +52,7 @@ Then, we used **Splunk Web**:
 ![Splunk Enterprise Login Screen on Kali Linux Virtual Machine](images2/Splunk_Enterprise_Login_Screen_on_Kali_Linux_Virtual_Machine.png)
 ![Splunk Event Analysis Interface - Timeline Visualization of Security Logs](images2/Splunk_Event_Analysis_Interface-Timeline_Visualization_of_Security_Logs.png)
 
+
 ---
 
 ## Step 4: Search and Analyze Logs
