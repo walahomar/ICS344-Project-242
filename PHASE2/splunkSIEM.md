@@ -1,6 +1,5 @@
 ---
-
-# Phase 2 SIEM Dashboard Analysis using Splunk on Kali
+# Phase 2 - SIEM Dashboard Analysis using Splunk on Kali
 
 In this phase, we used **Splunk on Kali Linux** to analyze logs collected from the victim machine (**Metasploitable3**).
 
