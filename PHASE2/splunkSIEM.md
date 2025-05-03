@@ -36,8 +36,8 @@ We logged into Splunk Web Interface using the **admin credentials** set during t
 ![SCP Transfer](images/scp_transfer.png "Transferring logs via SCP to the Splunk server")
 
 ---
-### 4. Administrator Dashboard View
-![Admin Dashboard](images/admin_dashboard.png "Splunk Dashboard View on Kali Linux")
+### 4. Login Screen on Kali Linux
+![Login Screen](images/login_screen.png "Splunk Login Interface on Kali")
 
 ---
 
