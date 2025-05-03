@@ -17,7 +17,9 @@ Connectivity was verified between the two machines.
 ![Victim Ping](Imagess/Victim_Ping.png "Pinging the victim machine from Kali to confirm connectivity")
 ---
 ### 2. Victim Machine Login
+
 This screenshot confirms that the victim machine (Metasploitable3) was successfully accessed using the correct username and password.
+
 ![Victim Login](Imagess/Successful_login.png "Login to Metasploitable3 as vagrant")
 ---
 
