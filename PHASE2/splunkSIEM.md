@@ -32,12 +32,13 @@ After accepting the license and starting the service, we accessed the Splunk Web
 
 We logged into Splunk Web Interface using the **admin credentials** set during the initial setup.
 
-### 3. SCP Log Transfer Process
-![SCP Transfer](images/scp_transfer.png "Transferring logs via SCP to the Splunk server")
+### 3. Login Screen on Kali Linux
+![Login Screen](images/login_screen.png "Splunk Login Interface on Kali")
 
 ---
-### 4. Login Screen on Kali Linux
-![Login Screen](images/login_screen.png "Splunk Login Interface on Kali")
+
+### 4. Administrator Dashboard View
+![Admin Dashboard](images/admin_dashboard.png "Splunk Dashboard View on Kali Linux")
 
 ---
 
@@ -56,10 +57,14 @@ Then, we used **Splunk Web**:
 
 ✅ The log file was uploaded successfully to Splunk and is ready for searching and analysis.
 
-![Splunk Enterprise Data Upload Review Screen](images/Splunk_Enterprise_Data_Upload_Review_Screen.png)
-![Splunk Enterprise Login Screen on Kali Linux Virtual Machine](images/Splunk_Enterprise_Login_Screen_on_Kali_Linux_Virtual_Machine.png)
-![Splunk Event Analysis Interface - Timeline Visualization of Security Logs](images/Splunk_Event_Analysis_Interface-Timeline_Visualization_of_Security_Logs.png)
-
+### 5. SCP Log Transfer Process
+![SCP Transfer](images/scp_transfer.png "Transferring logs via SCP to the Splunk server")
+---
+### 6. Splunk Web File Upload Confirmation
+![Web Upload](images/web_interface.png "Confirmation of File Upload in Splunk Web Interface")
+---
+### 7. SCP Log Transfer Process
+![SCP Transfer](images/scp_transfer.png "Transferring logs via SCP to the Splunk server")
 
 ---
 
