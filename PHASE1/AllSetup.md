@@ -18,17 +18,23 @@ Connectivity was verified between the two machines.
 ---
 ### 2. Victim Machine Login
 
-This screenshot confirms that the victim machine (Metasploitable3) was successfully accessed using the correct username and password.
+This confirms that the victim machine (Metasploitable3) was successfully accessed using the correct username and password.
 
 ![Victim Login](Imagess/Successful_login.png "Login to Metasploitable3 as vagrant")
 ---
 
 ### 3. Victim IP Configuration
+
+We checked the IP address of the victim machine to confirm its network visibility and connection readiness.
+
 ![Victim IP](Imagess/Victim_ip.png "Checking the IP address of the victim machine (Metasploitable3)")
 ---
 
 
 ### 4. Attacker IP Check
+
+A ping test was conducted from the Kali machine to ensure successful communication with the victim.
+
 ![Attacker Ping](Imagess/Attacker_ping.png "Getting attacker machine’s IP address")
 ---
 
@@ -37,28 +43,44 @@ This screenshot confirms that the victim machine (Metasploitable3) was successfu
 We used Metasploit's `scanner/ssh/ssh_login` module to perform a brute-force attack.
 
 ### 5. Launching Metasploit Console
+
+We launched the Metasploit Framework to initiate a brute-force SSH attack on the victim.
+
 ![Launch Metasploit](Imagess/Launch_msfconsole.png "Opening Metasploit console on Kali")
 ---
 
 ### 6. Searching for SSH Login Module
+
+We searched for the appropriate module to perform SSH brute-force attacks.
+
 ![Search SSH Module](Imagess/Search_msf.png "Searching for SSH login scanner module")
 ---
 
 ### 7. Setting SSH Brute-force Parameters
+
+We configured the attack parameters: target IP, username/password lists, and thread count.
+
 ![MSF Setting](Imagess/msf_setting.png "Setting RHOST, USER_FILE, PASS_FILE, and THREADS for SSH attack")
 ---
 
 ### 8. Successful SSH Login using Metasploit
+
+The attack successfully logged into the victim machine using the credentials vagrant:vagrant.
+
 ![Success Login Metasploit](Imagess/msf_success_login.png "Metasploit successfully finds valid credentials")
 ---
 
 ### 9. Active Session Opened
+
+This confirms the opening of an interactive SSH session on the victim machine.
+
 ![MSF Session](Imagess/msf_session.png "Metasploit session opened after successful brute-force")
 ---
 
 ## Step 3: Implement a Custom Script
 
-We also wrote a Python script using the `paramiko` library to perform the attack.
+A Python script using the paramiko library was written and executed to perform a brute-force attack. The script identified valid credentials.
+
 
 ### 10. Custom Python Script Brute-force
 
@@ -97,6 +119,11 @@ for username in usernames:
         if ssh_connect(username, password, target_ip, target_port):
             exit()
 ```
+### 11. Successful SSH Login using Python Script
+
+This screenshot shows that the custom Python script was able to successfully brute-force the SSH credentials.  
+The script tested multiple username and password combinations, and eventually found the correct pair:  
+Username: vagrant, Password: vagrant.
 
 ![Custom Script](Imagess/custom_script.png "Python script performing SSH brute-force attack and succeeding")
 ---
