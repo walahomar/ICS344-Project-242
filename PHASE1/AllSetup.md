@@ -13,17 +13,18 @@ We configured the virtual machines using VirtualBox:
 
 Connectivity was verified between the two machines.
 
-### 1. Victim Machine Login
+### 1. Metasploitable3 is running
+![Victim Ping](Imagess/Victim_Ping.png "Pinging the victim machine from Kali to confirm connectivity")
+---
+### 2. Victim Machine Login
+This screenshot confirms that the victim machine (Metasploitable3) was successfully accessed using the correct username and password.
 ![Victim Login](Imagess/Successful_login.png "Login to Metasploitable3 as vagrant")
 ---
 
-### 2. Victim IP Configuration
+### 3. Victim IP Configuration
 ![Victim IP](Imagess/Victim_ip.png "Checking the IP address of the victim machine (Metasploitable3)")
 ---
 
-### 3. Attacker-to-Victim Ping
-![Victim Ping](Imagess/Victim_Ping.png "Pinging the victim machine from Kali to confirm connectivity")
----
 
 ### 4. Attacker IP Check
 ![Attacker Ping](Imagess/Attacker_ping.png "Getting attacker machine’s IP address")
