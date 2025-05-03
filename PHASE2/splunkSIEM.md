@@ -14,9 +14,10 @@ We downloaded and installed **Splunk Enterprise** on Kali Linux using the `.deb`
 After accepting the license and starting the service, we accessed the Splunk Web Interface at:
 [http://localhost:8000/](http://localhost:8000/)
 
+![Installing dpkg](images/install_splunk_dpkg.png)
+
 ![Initial Splunk Config](images/initial_splunk_config.png)
 
-![Installing dpkg](images/install_splunk_dpkg.png)
 
 
 
