@@ -1,53 +1,64 @@
 # Phase 1 – Vulnerability Identification and Exploitation
 
-In this phase, we focused on identifying a vulnerability in the victim machine (Metasploitable3) and executing a brute-force SSH attack from the attacker machine (Kali Linux).  
-We utilized Metasploit and a custom Python script to simulate a real-world attack and confirm successful access.
+In this phase, we set up the attacker and victim machines, scanned for open ports, and launched brute-force attacks to exploit SSH login using Metasploit and a custom Python script.  
+The objective was to demonstrate how weak credentials can be discovered and used to gain unauthorized access.
 
 ---
 
-## Step 1: Setup the Environment
+## Step 1: Configure the Environment
 
-We prepared both the attacker and victim machines using VirtualBox, ensured connectivity, and verified that the SSH service on the victim machine was active and reachable.
+We configured the virtual machines using VirtualBox:
+- The **victim** machine is Metasploitable3.
+- The **attacker** machine is Kali Linux.
 
-### 1. Victim Environment Status
-- Machine: Metasploitable3
-- SSH Port: 22
-- IP Address: 192.168.150.3
+Connectivity was verified between the two machines.
 
-![Victim Ping & Port Status](IMG_9F82D18A-7360-49A2-8363-B3F014672D98.jpeg "Ping and Nmap scan on Metasploitable3")
-
+### 1. Victim Machine Login
+![Victim Login](Imagess/Successful_login.png "Login to Metasploitable3 as vagrant")
 ---
 
-## Step 2: Metasploit Brute-Force Attack
-
-We used the `auxiliary/scanner/ssh/ssh_login` module in Metasploit to perform a brute-force attack on the SSH service.  
-The attack successfully identified the correct credentials and opened an active session on the victim.
-
-### 2. Successful SSH Session via Metasploit
-- Credentials Used: vagrant / vagrant
-- Result: Session opened and shell access granted
-
-![Metasploit Session](IMG_7D082186-6D9F-4C94-A48A-0EFA147ECFFB.jpeg "Successful SSH session with Metasploit")
-
+### 2. Victim IP Configuration
+![Victim IP](Imagess/Victim_ip.png "Checking the IP address of the victim machine (Metasploitable3)")
 ---
 
-## Step 3: Custom Bash Script (Unsuccessful)
-
-A Bash script was created to automate SSH login attempts using the `sshpass` tool and lists of usernames and passwords.  
-Despite multiple trials, the Bash approach failed to establish a successful login due to SSH response handling limitations.
-
-### 3. Bash Brute Force Result
-![Bash Script Result](IMG_23151A07-231B-4691-BD98-E3381C03FD1A.jpeg "Bash script output showing failed attempts")
-
+### 3. Attacker-to-Victim Ping
+![Victim Ping](Imagess/Victim_Ping.png "Pinging the victim machine from Kali to confirm connectivity")
 ---
 
-## Step 4: Custom Python Script (Successful)
+### 4. Attacker IP Check
+![Attacker Ping](Imagess/Attacker_ping.png "Getting attacker machine’s IP address")
+---
 
-We implemented a Python script using the Paramiko library to automate SSH brute-force attacks with improved control over responses and exceptions.
+## Step 2: Use Metasploit to Perform Brute-Force
 
-The script successfully identified the correct credentials (`vagrant:vagrant`) from the provided lists and logged in.
+We used Metasploit's `scanner/ssh/ssh_login` module to perform a brute-force attack.
 
-### 4. Python Script Used
+### 5. Launching Metasploit Console
+![Launch Metasploit](Imagess/Launch_msfconsole.png "Opening Metasploit console on Kali")
+---
+
+### 6. Searching for SSH Login Module
+![Search SSH Module](Imagess/Search_msf.png "Searching for SSH login scanner module")
+---
+
+### 7. Setting SSH Brute-force Parameters
+![MSF Setting](Imagess/msf_setting.png "Setting RHOST, USER_FILE, PASS_FILE, and THREADS for SSH attack")
+---
+
+### 8. Successful SSH Login using Metasploit
+![Success Login Metasploit](Imagess/msf_success_login.png "Metasploit successfully finds valid credentials")
+---
+
+### 9. Active Session Opened
+![MSF Session](Imagess/msf_session.png "Metasploit session opened after successful brute-force")
+---
+
+## Step 3: Implement a Custom Script
+
+We also wrote a Python script using the `paramiko` library to perform the attack.
+
+### 10. Custom Python Script Brute-force
+
 ```python
 import paramiko
 import socket
@@ -84,9 +95,5 @@ for username in usernames:
             exit()
 ```
 
----
-
-### 5. Successful Python Brute Force Result
-![Python Script Success](IMG_BCE66EEB-F14D-4814-8350-933F0B8E619E.jpeg "Successful brute-force login using Python")
-
+![Custom Script](Imagess/custom_script.png "Python script performing SSH brute-force attack and succeeding")
 ---
