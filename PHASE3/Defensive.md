@@ -65,13 +65,13 @@ There was a **noticeable drop** in activity after the defense was enabled, indic
 
 To evaluate the effectiveness of **Fail2Ban**, we compared the logs **before and after** applying the defense:
 
-### 🔴 Before Defense (Screenshot 1):
+### Before Defense (Screenshot 1):
 
 - Screenshot from `auth.log` in Splunk.
 - Shows multiple SSH login events (both successful and failed).
 - Indicates the system was exposed to **brute-force attempts** with no protection.
 
-### ✅ After Defense (Screenshot 2):
+### After Defense (Screenshot 2):
 
 - Screenshot from `fail2ban.log` in Splunk.
 - Shows that Fail2Ban detected repeated failed attempts and **banned IP `192.168.150.8`**.
