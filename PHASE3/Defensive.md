@@ -19,7 +19,8 @@ From the log entries, we identified multiple **SSH login activities**, including
 To mitigate **SSH brute-force attempts**, we implemented the **Fail2Ban** tool on the victim machine.  
 Fail2Ban monitors log files and **automatically bans IPs** that show malicious behavior.
 
-##Photo 13
+### 2. Installing and Running Fail2Ban
+![Installing Fail2Ban](images/install_fail2ban.png "Installing Fail2Ban on the victim machine")
 
 ---
 
@@ -33,9 +34,15 @@ After configuring Fail2Ban:
 - Repeated failed login attempts led to the **automatic banning** of the attacker's IP.
 - The jail status confirmed that **IP `192.168.150.8` was successfully banned** after reaching 50 failed attempts.
 
-##Photo 14&15
+### 3. SSH Brute Force using Hydra
+![Hydra Brute Force](images/hydra_brute_force.png "Brute-force SSH attack on victim using Hydra")
+
 ---
 
+### 4. IP Ban Status in Fail2Ban
+![IP Ban Status](images/fail2ban_ip_ban_status.png "Fail2Ban showing banned attacker IP")
+
+---
 ## Step 4: Analyze Logs in Splunk
 
 We retrieved the updated `fail2ban.log` file from the victim machine and uploaded it to Splunk.
@@ -46,9 +53,14 @@ By searching for events containing the keyword `"Ban"`:
 📉 The line chart below shows the number of SSH-related events over time.  
 There was a **noticeable drop** in activity after the defense was enabled, indicating that **Fail2Ban blocked the brute-force attempts**.
 
-##Photo 16&17
----
+### 5. Ban Event in Splunk (SSH Jail)
+![Ban Event](images/fail2ban_ban_event.png "Splunk log showing Fail2Ban jail event")
 
+---
+### 6. Pivot Chart for Fail2Ban Logs
+![Pivot Chart](images/pivot_chart_fail2ban.png "Time-based pivot of Fail2Ban log events")
+
+---
 ## Step 5: Compare Before and After
 
 To evaluate the effectiveness of **Fail2Ban**, we compared the logs **before and after** applying the defense:
@@ -65,6 +77,11 @@ To evaluate the effectiveness of **Fail2Ban**, we compared the logs **before and
 - Shows that Fail2Ban detected repeated failed attempts and **banned IP `192.168.150.8`**.
 - Confirms that the **defense mechanism was effective** in stopping further login attempts.
 
-##Photo 18&19
+### 7. Event Table Overview in Splunk
+![Event Table](images/splunk_event_table.png "Detailed Splunk table of log events")
 ---
 
+### 8. Ban Event in Splunk (SSH Jail)
+![Ban Event](images/fail2ban_ban_event.png "Splunk log showing Fail2Ban jail event")
+
+---
