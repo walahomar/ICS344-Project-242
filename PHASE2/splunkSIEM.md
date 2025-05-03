@@ -63,8 +63,8 @@ Then, we used **Splunk Web**:
 ### 6. Splunk Web File Upload Confirmation
 ![Web Upload](images/web_interface.png "Confirmation of File Upload in Splunk Web Interface")
 ---
-### 7. SCP Log Transfer Process
-![SCP Transfer](images/scp_transfer.png "Transferring logs via SCP to the Splunk server")
+### 7. Data Upload Review
+![Data Upload](images/data_upload.png "Reviewing uploaded logs inside Splunk")
 
 ---
 
