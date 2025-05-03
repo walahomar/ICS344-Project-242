@@ -9,9 +9,7 @@ As a result, we decided to adopt a **manual approach**:
 
 * Log files were securely transferred using `scp` from the victim to the attacker machine (Kali),
 * Then uploaded to Splunk for visualization and analysis.
-
 ---
-
 ## Step 1: Install Splunk on Kali Linux
 
 We downloaded and installed **Splunk Enterprise** on Kali Linux using the `.deb` package.
