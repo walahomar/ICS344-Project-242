@@ -78,17 +78,21 @@ We used the **Splunk Search & Reporting App** to:
 
 This helped us identify successful and failed SSH login attempts initiated during the attack.
 
-![Splunk Pivot Configuration Interface - Time Series Analysis Dashboard](images/Splunk_Pivot_Configuration_Interface-Time_Series_Analysis_Dashboard.png)
-![Splunk Security Event Timeline - Authentication Log Analysis](images/Splunk_Security_Event_Timeline-Authentication_Log_Analysis.png)
+### 8. Timeline Event Analysis
+![Timeline Analysis](images/timeline_analysis.png "Visualization of Events Over Time")
 
 ---
+### 9. Security Events Timeline
+![Security Timeline](images/security_timeline.png "Authentication Log Timeline View")
 
+---
 ## Step 5: Dashboard Visualization
 
 📈 This spike in the graph indicates a **significant increase in events** related to unauthorized access attempts.
 The rise reflects the attacker's **repeated SSH login attempts**, which were captured by the system and visualized through Splunk dashboards.
 
-![Splunk Web Interface](images/Splunk_Web_Interface.png)
+### 10. Pivot Dashboard View
+![Pivot Dashboard](images/pivot_dashboard.png "Time-Series Analysis using Splunk Pivot Interface")
 
 ---
 
