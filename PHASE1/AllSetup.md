@@ -121,7 +121,7 @@ for username in usernames:
 ```
 ### 11. Successful SSH Login using Python Script
 
-This screenshot shows that the custom Python script was able to successfully brute-force the SSH credentials.  
+This shows that the custom Python script was able to successfully brute-force the SSH credentials.  
 The script tested multiple username and password combinations, and eventually found the correct pair:  
 Username: vagrant, Password: vagrant.
 
