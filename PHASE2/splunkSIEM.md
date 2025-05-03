@@ -1,7 +1,7 @@
 ---
 # Phase 2 - SIEM Dashboard Analysis using Splunk on Kali
-
 In this phase, we used **Splunk on Kali Linux** to analyze logs collected from the victim machine (**Metasploitable3**).
+...
 After multiple attempts to install and configure the **Splunk Universal Forwarder** on the victim, we encountered persistent compatibility errors due to the outdated operating system and unsupported architecture.
 As a result, we decided to adopt a **manual approach**:
 
