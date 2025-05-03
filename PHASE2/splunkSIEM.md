@@ -14,8 +14,8 @@ We downloaded and installed **Splunk Enterprise** on Kali Linux using the `.deb`
 After accepting the license and starting the service, we accessed the Splunk Web Interface at:
 [http://localhost:8000/](http://localhost:8000/)
 
-![Initial Splunk Configuration and Web Interface Launch on Kali Linux](images2/Initial_Splunk_Configuration_and_Web_Interface_Launch_on_Kali_Linux.png)
-![Installing Splunk on Kali Linux using dpkg](images2/Installing_Splunk_on_Kali_Linux_using_dpkg.png)
+![Initial Splunk Configuration and Web Interface Launch on Kali Linux](images/Initial_Splunk_Configuration_and_Web_Interface_Launch_on_Kali_Linux.png)
+![Installing Splunk on Kali Linux using dpkg](images/Installing_Splunk_on_Kali_Linux_using_dpkg.png)
 
 ---
 
@@ -23,8 +23,8 @@ After accepting the license and starting the service, we accessed the Splunk Web
 
 We logged into Splunk Web Interface using the **admin credentials** set during the initial setup.
 
-![SCP Log Transfer Process](images2/SCP_Log_Transfer_Process.png)
-![Splunk Enterprise Dashboard - Administrator View on Kali Linux VM](images2/Splunk_Enterprise_Dashboard-Administrator_View_on_Kali_Linux_VM.png)
+![SCP Log Transfer Process](images/SCP_Log_Transfer_Process.png)
+![Splunk Enterprise Dashboard - Administrator View on Kali Linux VM](images/Splunk_Enterprise_Dashboard-Administrator_View_on_Kali_Linux_VM.png)
 
 ---
 
@@ -43,9 +43,9 @@ Then, we used **Splunk Web**:
 
 ✅ The log file was uploaded successfully to Splunk and is ready for searching and analysis.
 
-![Splunk Enterprise Data Upload Review Screen](images2/Splunk_Enterprise_Data_Upload_Review_Screen.png)
-![Splunk Enterprise Login Screen on Kali Linux Virtual Machine](images2/Splunk_Enterprise_Login_Screen_on_Kali_Linux_Virtual_Machine.png)
-![Splunk Event Analysis Interface - Timeline Visualization of Security Logs](images2/Splunk_Event_Analysis_Interface-Timeline_Visualization_of_Security_Logs.png)
+![Splunk Enterprise Data Upload Review Screen](images/Splunk_Enterprise_Data_Upload_Review_Screen.png)
+![Splunk Enterprise Login Screen on Kali Linux Virtual Machine](images/Splunk_Enterprise_Login_Screen_on_Kali_Linux_Virtual_Machine.png)
+![Splunk Event Analysis Interface - Timeline Visualization of Security Logs](images/Splunk_Event_Analysis_Interface-Timeline_Visualization_of_Security_Logs.png)
 
 
 ---
@@ -60,8 +60,8 @@ We used the **Splunk Search & Reporting App** to:
 
 This helped us identify successful and failed SSH login attempts initiated during the attack.
 
-![Splunk Pivot Configuration Interface - Time Series Analysis Dashboard](images2/Splunk_Pivot_Configuration_Interface-Time_Series_Analysis_Dashboard.png)
-![Splunk Security Event Timeline - Authentication Log Analysis](images2/Splunk_Security_Event_Timeline-Authentication_Log_Analysis.png)
+![Splunk Pivot Configuration Interface - Time Series Analysis Dashboard](images/Splunk_Pivot_Configuration_Interface-Time_Series_Analysis_Dashboard.png)
+![Splunk Security Event Timeline - Authentication Log Analysis](images/Splunk_Security_Event_Timeline-Authentication_Log_Analysis.png)
 
 ---
 
@@ -70,7 +70,7 @@ This helped us identify successful and failed SSH login attempts initiated durin
 📈 This spike in the graph indicates a **significant increase in events** related to unauthorized access attempts.
 The rise reflects the attacker's **repeated SSH login attempts**, which were captured by the system and visualized through Splunk dashboards.
 
-![Splunk Web Interface](images2/Splunk_Web_Interface.png)
+![Splunk Web Interface](images/Splunk_Web_Interface.png)
 
 ---
 
