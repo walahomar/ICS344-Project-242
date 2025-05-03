@@ -4,7 +4,6 @@
 In this phase, we used **Splunk on Kali Linux** to analyze logs collected from the victim machine (**Metasploitable3**).
 
 After multiple attempts to install and configure the **Splunk Universal Forwarder** on the victim, we encountered persistent compatibility errors due to the outdated operating system and unsupported architecture.
-
 As a result, we decided to adopt a **manual approach**:
 
 * Log files were securely transferred using `scp` from the victim to the attacker machine (Kali),
