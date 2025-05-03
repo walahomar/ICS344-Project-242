@@ -14,8 +14,10 @@ We downloaded and installed **Splunk Enterprise** on Kali Linux using the `.deb`
 After accepting the license and starting the service, we accessed the Splunk Web Interface at:
 [http://localhost:8000/](http://localhost:8000/)
 
+### 1. Installing Splunk using dpkg
 ![Installing dpkg](images/install_splunk_dpkg.png)
-
+---
+### 2. Initial Splunk Configuration
 ![Initial Splunk Config](images/initial_splunk_config.png)
 
 
@@ -30,8 +32,12 @@ After accepting the license and starting the service, we accessed the Splunk Web
 
 We logged into Splunk Web Interface using the **admin credentials** set during the initial setup.
 
-![SCP Log Transfer Process](images/SCP_Log_Transfer_Process.png)
-![Splunk Enterprise Dashboard - Administrator View on Kali Linux VM](images/Splunk_Enterprise_Dashboard-Administrator_View_on_Kali_Linux_VM.png)
+### 3. SCP Log Transfer Process
+![SCP Transfer](images/scp_transfer.png "Transferring logs via SCP to the Splunk server")
+
+---
+### 4. Administrator Dashboard View
+![Admin Dashboard](images/admin_dashboard.png "Splunk Dashboard View on Kali Linux")
 
 ---
 
