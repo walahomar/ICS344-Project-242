@@ -10,9 +10,10 @@ The goal was to enhance system security and verify the effectiveness of the defe
 We used **Splunk** to analyze the uploaded `auth.log` file.  
 From the log entries, we identified multiple **SSH login activities**, including both accepted and failed attempts.
 
-##Photo 11&12
----
+### 1. Timeline of Authentication Logs
+![Timeline Auth Events](images/splunk_auth_timeline.png "Authentication timeline in Splunk")
 
+---
 ## Step 2: Apply Defense Mechanism
 
 To mitigate **SSH brute-force attempts**, we implemented the **Fail2Ban** tool on the victim machine.  
